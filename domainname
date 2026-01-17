@@ -1,0 +1,602 @@
+Welcome to Ubuntu 24.04.3 LTS (GNU/Linux 6.14.0-1015-aws x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+ System information as of Sat Jan 17 14:44:32 UTC 2026
+
+  System load:  0.18              Temperature:           -273.1 C
+  Usage of /:   25.8% of 6.71GB   Processes:             115
+  Memory usage: 23%               Users logged in:       0
+  Swap usage:   0%                IPv4 address for ens5: 172.31.35.252
+
+Expanded Security Maintenance for Applications is not enabled.
+
+0 updates can be applied immediately.
+
+Enable ESM Apps to receive additional future security updates.
+See https://ubuntu.com/esm or run: sudo pro status
+
+
+The list of available updates is more than a week old.
+To check for new updates run: sudo apt update
+
+
+The programs included with the Ubuntu system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Ubuntu comes with ABSOLUTELY NO WARRANTY, to the extent permitted by
+applicable law.
+
+To run a command as administrator (user "root"), use "sudo <command>".
+See "man sudo_root" for details.
+
+ubuntu@ip-172-31-35-252:~$ sudo apt update -y
+Hit:1 http://ap-southeast-1.ec2.archive.ubuntu.com/ubuntu noble InRelease
+Get:2 http://ap-southeast-1.ec2.archive.ubuntu.com/ubuntu noble-updates InRelease [126 kB]
+Get:3 http://ap-southeast-1.ec2.archive.ubuntu.com/ubuntu noble-backports InRelease [126 kB]
+Get:4 http://ap-southeast-1.ec2.archive.ubuntu.com/ubuntu noble/universe amd64 Packages [15.0 MB]
+Get:5 http://ap-southeast-1.ec2.archive.ubuntu.com/ubuntu noble/universe Translation-en [5982 kB]
+Get:6 http://ap-southeast-1.ec2.archive.ubuntu.com/ubuntu noble/universe amd64 Components [3871 kB]
+Get:7 http://security.ubuntu.com/ubuntu noble-security InRelease [126 kB]          
+Get:8 http://ap-southeast-1.ec2.archive.ubuntu.com/ubuntu noble/universe amd64 c-n-f Metadata [301 kB]
+Get:9 http://ap-southeast-1.ec2.archive.ubuntu.com/ubuntu noble/multiverse amd64 Packages [269 kB]
+Get:10 http://ap-southeast-1.ec2.archive.ubuntu.com/ubuntu noble/multiverse Translation-en [118 kB]
+Get:11 http://ap-southeast-1.ec2.archive.ubuntu.com/ubuntu noble/multiverse amd64 Components [35.0 kB]
+Get:12 http://ap-southeast-1.ec2.archive.ubuntu.com/ubuntu noble/multiverse amd64 c-n-f Metadata [8328 B]
+Get:13 http://ap-southeast-1.ec2.archive.ubuntu.com/ubuntu noble-updates/main amd64 Packages [1694 kB]
+Get:14 http://ap-southeast-1.ec2.archive.ubuntu.com/ubuntu noble-updates/main Translation-en [313 kB]
+Get:15 http://ap-southeast-1.ec2.archive.ubuntu.com/ubuntu noble-updates/main amd64 Components [175 kB]
+Get:16 http://ap-southeast-1.ec2.archive.ubuntu.com/ubuntu noble-updates/main amd64 c-n-f Metadata [15.9 kB]
+Get:17 http://ap-southeast-1.ec2.archive.ubuntu.com/ubuntu noble-updates/universe amd64 Packages [1514 kB]
+Get:18 http://ap-southeast-1.ec2.archive.ubuntu.com/ubuntu noble-updates/universe Translation-en [308 kB]
+Get:19 http://ap-southeast-1.ec2.archive.ubuntu.com/ubuntu noble-updates/universe amd64 Components [377 kB]
+Get:20 http://ap-southeast-1.ec2.archive.ubuntu.com/ubuntu noble-updates/universe amd64 c-n-f Metadata [31.5 kB]
+Get:21 http://ap-southeast-1.ec2.archive.ubuntu.com/ubuntu noble-updates/restricted amd64 Packages [2426 kB]
+Get:22 http://ap-southeast-1.ec2.archive.ubuntu.com/ubuntu noble-updates/restricted Translation-en [554 kB]
+Get:23 http://ap-southeast-1.ec2.archive.ubuntu.com/ubuntu noble-updates/restricted amd64 Components [212 B]
+Get:24 http://ap-southeast-1.ec2.archive.ubuntu.com/ubuntu noble-updates/restricted amd64 c-n-f Metadata [516 B]
+Get:25 http://ap-southeast-1.ec2.archive.ubuntu.com/ubuntu noble-updates/multiverse amd64 Packages [30.3 kB]
+Get:26 http://ap-southeast-1.ec2.archive.ubuntu.com/ubuntu noble-updates/multiverse Translation-en [6048 B]
+Get:27 http://ap-southeast-1.ec2.archive.ubuntu.com/ubuntu noble-updates/multiverse amd64 Components [940 B]
+Get:28 http://ap-southeast-1.ec2.archive.ubuntu.com/ubuntu noble-updates/multiverse amd64 c-n-f Metadata [488 B]
+Get:29 http://ap-southeast-1.ec2.archive.ubuntu.com/ubuntu noble-backports/main amd64 Packages [40.4 kB]
+Get:30 http://ap-southeast-1.ec2.archive.ubuntu.com/ubuntu noble-backports/main Translation-en [9208 B]
+Get:31 http://ap-southeast-1.ec2.archive.ubuntu.com/ubuntu noble-backports/main amd64 Components [7284 B]
+Get:32 http://ap-southeast-1.ec2.archive.ubuntu.com/ubuntu noble-backports/main amd64 c-n-f Metadata [368 B]
+Get:33 http://ap-southeast-1.ec2.archive.ubuntu.com/ubuntu noble-backports/universe amd64 Packages [29.5 kB]
+Get:34 http://ap-southeast-1.ec2.archive.ubuntu.com/ubuntu noble-backports/universe Translation-en [17.9 kB]
+Get:35 http://ap-southeast-1.ec2.archive.ubuntu.com/ubuntu noble-backports/universe amd64 Components [10.5 kB]
+Get:36 http://ap-southeast-1.ec2.archive.ubuntu.com/ubuntu noble-backports/universe amd64 c-n-f Metadata [1444 B]
+Get:37 http://ap-southeast-1.ec2.archive.ubuntu.com/ubuntu noble-backports/restricted amd64 Components [216 B]
+Get:38 http://ap-southeast-1.ec2.archive.ubuntu.com/ubuntu noble-backports/restricted amd64 c-n-f Metadata [116 B]
+Get:39 http://ap-southeast-1.ec2.archive.ubuntu.com/ubuntu noble-backports/multiverse amd64 Components [212 B]
+Get:40 http://ap-southeast-1.ec2.archive.ubuntu.com/ubuntu noble-backports/multiverse amd64 c-n-f Metadata [116 B]
+Get:41 http://security.ubuntu.com/ubuntu noble-security/main amd64 Packages [1404 kB]
+Get:42 http://security.ubuntu.com/ubuntu noble-security/main Translation-en [228 kB]
+Get:43 http://security.ubuntu.com/ubuntu noble-security/main amd64 Components [21.6 kB]
+Get:44 http://security.ubuntu.com/ubuntu noble-security/main amd64 c-n-f Metadata [9724 B]
+Get:45 http://security.ubuntu.com/ubuntu noble-security/universe amd64 Packages [922 kB]
+Get:46 http://security.ubuntu.com/ubuntu noble-security/universe Translation-en [209 kB]        
+Get:47 http://security.ubuntu.com/ubuntu noble-security/universe amd64 Components [71.4 kB]     
+Get:48 http://security.ubuntu.com/ubuntu noble-security/universe amd64 c-n-f Metadata [19.7 kB] 
+Get:49 http://security.ubuntu.com/ubuntu noble-security/restricted amd64 Packages [2302 kB]     
+Get:50 http://security.ubuntu.com/ubuntu noble-security/restricted Translation-en [527 kB]      
+Get:51 http://security.ubuntu.com/ubuntu noble-security/restricted amd64 Components [212 B]     
+Get:52 http://security.ubuntu.com/ubuntu noble-security/multiverse amd64 Packages [27.4 kB]     
+Get:53 http://security.ubuntu.com/ubuntu noble-security/multiverse Translation-en [6188 B]      
+Get:54 http://security.ubuntu.com/ubuntu noble-security/multiverse amd64 Components [208 B]     
+Get:55 http://security.ubuntu.com/ubuntu noble-security/multiverse amd64 c-n-f Metadata [384 B] 
+Fetched 39.3 MB in 28s (1425 kB/s)                                                              
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+86 packages can be upgraded. Run 'apt list --upgradable' to see them.
+ubuntu@ip-172-31-35-252:~$ sudo apt install apache2 -y
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following additional packages will be installed:
+  apache2-bin apache2-data apache2-utils libapr1t64 libaprutil1-dbd-sqlite3 libaprutil1-ldap
+  libaprutil1t64 liblua5.4-0 ssl-cert
+Suggested packages:
+  apache2-doc apache2-suexec-pristine | apache2-suexec-custom www-browser
+The following NEW packages will be installed:
+  apache2 apache2-bin apache2-data apache2-utils libapr1t64 libaprutil1-dbd-sqlite3
+  libaprutil1-ldap libaprutil1t64 liblua5.4-0 ssl-cert
+0 upgraded, 10 newly installed, 0 to remove and 86 not upgraded.
+Need to get 2086 kB of archives.
+After this operation, 8090 kB of additional disk space will be used.
+Get:1 http://ap-southeast-1.ec2.archive.ubuntu.com/ubuntu noble-updates/main amd64 libapr1t64 amd64 1.7.2-3.1ubuntu0.1 [108 kB]
+Get:2 http://ap-southeast-1.ec2.archive.ubuntu.com/ubuntu noble/main amd64 libaprutil1t64 amd64 1.6.3-1.1ubuntu7 [91.9 kB]
+Get:3 http://ap-southeast-1.ec2.archive.ubuntu.com/ubuntu noble/main amd64 libaprutil1-dbd-sqlite3 amd64 1.6.3-1.1ubuntu7 [11.2 kB]
+Get:4 http://ap-southeast-1.ec2.archive.ubuntu.com/ubuntu noble/main amd64 libaprutil1-ldap amd64 1.6.3-1.1ubuntu7 [9116 B]
+Get:5 http://ap-southeast-1.ec2.archive.ubuntu.com/ubuntu noble/main amd64 liblua5.4-0 amd64 5.4.6-3build2 [166 kB]
+Get:6 http://ap-southeast-1.ec2.archive.ubuntu.com/ubuntu noble-updates/main amd64 apache2-bin amd64 2.4.58-1ubuntu8.8 [1331 kB]
+Get:7 http://ap-southeast-1.ec2.archive.ubuntu.com/ubuntu noble-updates/main amd64 apache2-data all 2.4.58-1ubuntu8.8 [163 kB]
+Get:8 http://ap-southeast-1.ec2.archive.ubuntu.com/ubuntu noble-updates/main amd64 apache2-utils amd64 2.4.58-1ubuntu8.8 [97.7 kB]
+Get:9 http://ap-southeast-1.ec2.archive.ubuntu.com/ubuntu noble-updates/main amd64 apache2 amd64 2.4.58-1ubuntu8.8 [90.2 kB]
+Get:10 http://ap-southeast-1.ec2.archive.ubuntu.com/ubuntu noble/main amd64 ssl-cert all 1.1.2ubuntu1 [17.8 kB]
+Fetched 2086 kB in 0s (38.5 MB/s)   
+Preconfiguring packages ...
+Selecting previously unselected package libapr1t64:amd64.
+(Reading database ... 71735 files and directories currently installed.)
+Preparing to unpack .../0-libapr1t64_1.7.2-3.1ubuntu0.1_amd64.deb ...
+Unpacking libapr1t64:amd64 (1.7.2-3.1ubuntu0.1) ...
+Selecting previously unselected package libaprutil1t64:amd64.
+Preparing to unpack .../1-libaprutil1t64_1.6.3-1.1ubuntu7_amd64.deb ...
+Unpacking libaprutil1t64:amd64 (1.6.3-1.1ubuntu7) ...
+Selecting previously unselected package libaprutil1-dbd-sqlite3:amd64.
+Preparing to unpack .../2-libaprutil1-dbd-sqlite3_1.6.3-1.1ubuntu7_amd64.deb ...
+Unpacking libaprutil1-dbd-sqlite3:amd64 (1.6.3-1.1ubuntu7) ...
+Selecting previously unselected package libaprutil1-ldap:amd64.
+Preparing to unpack .../3-libaprutil1-ldap_1.6.3-1.1ubuntu7_amd64.deb ...
+Unpacking libaprutil1-ldap:amd64 (1.6.3-1.1ubuntu7) ...
+Selecting previously unselected package liblua5.4-0:amd64.
+Preparing to unpack .../4-liblua5.4-0_5.4.6-3build2_amd64.deb ...
+Unpacking liblua5.4-0:amd64 (5.4.6-3build2) ...
+Selecting previously unselected package apache2-bin.
+Preparing to unpack .../5-apache2-bin_2.4.58-1ubuntu8.8_amd64.deb ...
+Unpacking apache2-bin (2.4.58-1ubuntu8.8) ...
+Selecting previously unselected package apache2-data.
+Preparing to unpack .../6-apache2-data_2.4.58-1ubuntu8.8_all.deb ...
+Unpacking apache2-data (2.4.58-1ubuntu8.8) ...
+Selecting previously unselected package apache2-utils.
+Preparing to unpack .../7-apache2-utils_2.4.58-1ubuntu8.8_amd64.deb ...
+Unpacking apache2-utils (2.4.58-1ubuntu8.8) ...
+Selecting previously unselected package apache2.
+Preparing to unpack .../8-apache2_2.4.58-1ubuntu8.8_amd64.deb ...
+Unpacking apache2 (2.4.58-1ubuntu8.8) ...
+Selecting previously unselected package ssl-cert.
+Preparing to unpack .../9-ssl-cert_1.1.2ubuntu1_all.deb ...
+Unpacking ssl-cert (1.1.2ubuntu1) ...
+Setting up ssl-cert (1.1.2ubuntu1) ...
+Created symlink /etc/systemd/system/multi-user.target.wants/ssl-cert.service → /usr/lib/systemd/system/ssl-cert.service.
+Setting up libapr1t64:amd64 (1.7.2-3.1ubuntu0.1) ...
+Setting up liblua5.4-0:amd64 (5.4.6-3build2) ...
+Setting up apache2-data (2.4.58-1ubuntu8.8) ...
+Setting up libaprutil1t64:amd64 (1.6.3-1.1ubuntu7) ...
+Setting up libaprutil1-ldap:amd64 (1.6.3-1.1ubuntu7) ...
+Setting up libaprutil1-dbd-sqlite3:amd64 (1.6.3-1.1ubuntu7) ...
+Setting up apache2-utils (2.4.58-1ubuntu8.8) ...
+Setting up apache2-bin (2.4.58-1ubuntu8.8) ...
+Setting up apache2 (2.4.58-1ubuntu8.8) ...
+Enabling module mpm_event.
+Enabling module authz_core.
+Enabling module authz_host.
+Enabling module authn_core.
+Enabling module auth_basic.
+Enabling module access_compat.
+Enabling module authn_file.
+Enabling module authz_user.
+Enabling module alias.
+Enabling module dir.
+Enabling module autoindex.
+Enabling module env.
+Enabling module mime.
+Enabling module negotiation.
+Enabling module setenvif.
+Enabling module filter.
+Enabling module deflate.
+Enabling module status.
+Enabling module reqtimeout.
+Enabling conf charset.
+Enabling conf localized-error-pages.
+Enabling conf other-vhosts-access-log.
+Enabling conf security.
+Enabling conf serve-cgi-bin.
+Enabling site 000-default.
+Created symlink /etc/systemd/system/multi-user.target.wants/apache2.service → /usr/lib/systemd/system/apache2.service.
+Created symlink /etc/systemd/system/multi-user.target.wants/apache-htcacheclean.service → /usr/lib/systemd/system/apache-htcacheclean.service.
+Processing triggers for ufw (0.36.2-6) ...
+Processing triggers for man-db (2.12.0-4build2) ...
+Processing triggers for libc-bin (2.39-0ubuntu8.6) ...
+Scanning processes... [                                                       Scanning processes... [                                                       Scanning processes... [=                                                      Scanning processes... [=                                                      Scanning processes... [==                                                     Scanning processes... [===                                                    Scanning processes... [===                                                    Scanning processes... [====                                                   Scanning processes... [====                                                   Scanning processes... [=====                                                  Scanning processes... [======                                                 Scanning processes... [======                                                 Scanning processes... [=======                                                Scanning processes... [========                                               Scanning processes... [========                                               Scanning processes... [=========                                              Scanning processes... [=========                                              Scanning processes... [==========                                             Scanning processes... [===========                                            Scanning processes... [===========                                            Scanning processes... [============                                           Scanning processes... [============                                           Scanning processes... [=============                                          Scanning processes... [==============                                         Scanning processes... [==============                                         Scanning processes... [===============                                        Scanning processes... [================                                       Scanning processes... [================                                       Scanning processes... [=================                                      Scanning processes... [=================                                      Scanning processes... [==================                                     Scanning processes... [===================                                    Scanning processes... [===================                                    Scanning processes... [====================                                   Scanning processes... [=====================                                  Scanning processes... [=====================                                  Scanning processes... [======================                                 Scanning processes... [======================                                 Scanning processes... [=======================                                Scanning processes... [========================                               Scanning processes... [========================                               Scanning processes... [=========================                              Scanning processes... [=========================                              Scanning processes... [==========================                             Scanning processes... [===========================                            Scanning processes... [===========================                            Scanning processes... [============================                           Scanning processes... [=============================                          Scanning processes... [=============================                          Scanning processes... [==============================                         Scanning processes... [==============================                         Scanning processes... [===============================                        Scanning processes... [================================                       Scanning processes... [================================                       Scanning processes... [=================================                      Scanning processes... [==================================                     Scanning processes... [==================================                     Scanning processes... [===================================                    Scanning processes... [===================================                    Scanning processes... [====================================                   Scanning processes... [=====================================                  Scanning processes... [=====================================                  Scanning processes... [======================================                 Scanning processes... [======================================                 Scanning processes... [=======================================                Scanning processes... [========================================               Scanning processes... [========================================               Scanning processes... [=========================================              Scanning processes... [==========================================             Scanning processes... [==========================================             Scanning processes... [===========================================            Scanning processes... [===========================================            Scanning processes... [============================================           Scanning processes... [=============================================          Scanning processes... [=============================================          Scanning processes... [==============================================         Scanning processes... [===============================================        Scanning processes... [===============================================        Scanning processes... [================================================       Scanning processes... [================================================       Scanning processes... [=================================================      Scanning processes... [==================================================     Scanning processes... [==================================================     Scanning processes... [===================================================    Scanning processes... [===================================================    Scanning processes... [====================================================   Scanning processes... [=====================================================  Scanning processes... [=====================================================  Scanning processes... [====================================================== Scanning processes... [=======================================================Scanning processes... [=======================================================Scanning processes... [=======================================================Scanning processes... [=======================================================Scanning processes... [=======================================================Scanning processes... [=======================================================Scanning processes... [=======================================================Scanning processes... [=======================================================Scanning processes... [=======================================================Scanning processes... [=======================================================Scanning processes... [=======================================================Scanning processes... [=======================================================Scanning processes... [=======================================================Scanning processes... [=======================================================Scanning processes... [=======================================================Scanning processes... [=======================================================Scanning processes... [=======================================================Scanning processes... [=======================================================Scanning processes... [=======================================================Scanning processes... [=======================================================Scanning processes... [=======================================================Scanning processes... [=======================================================Scanning processes... [=======================================================Scanning processes... [=======================================================Scanning processes... [=======================================================Scanning processes... [=======================================================Scanning processes... [=======================================================Scanning processes... [=======================================================Scanning processes... [=======================================================Scanning processes... [=======================================================Scanning processes...                                                                            
+Scanning linux images... [                                                    Scanning linux images... [=======================                             Scanning linux images... [==============================================      Scanning linux images... [====================================================Scanning linux images...                                                                         
+
+Running kernel seems to be up-to-date.
+
+No services need to be restarted.
+
+No containers need to be restarted.
+
+No user sessions are running outdated binaries.
+
+No VM guests are running outdated hypervisor (qemu) binaries on this host.
+ubuntu@ip-172-31-35-252:~$ sudo systemctl start apache2
+ubuntu@ip-172-31-35-252:~$ sudo systemctl enable apache2
+Synchronizing state of apache2.service with SysV service script with /usr/lib/systemd/systemd-sysv-install.
+Executing: /usr/lib/systemd/systemd-sysv-install enable apache2
+ubuntu@ip-172-31-35-252:~$ sudo systemctl status apache2
+● apache2.service - The Apache HTTP Server
+     Loaded: loaded (/usr/lib/systemd/system/apache2.service; enabled; preset: enabled)
+     Active: active (running) since Sat 2026-01-17 14:47:18 UTC; 51s ago
+       Docs: https://httpd.apache.org/docs/2.4/
+   Main PID: 2420 (apache2)
+      Tasks: 55 (limit: 1008)
+     Memory: 5.4M (peak: 5.9M)
+        CPU: 38ms
+     CGroup: /system.slice/apache2.service
+             ├─2420 /usr/sbin/apache2 -k start
+             ├─2422 /usr/sbin/apache2 -k start
+             └─2423 /usr/sbin/apache2 -k start
+
+Jan 17 14:47:18 ip-172-31-35-252 systemd[1]: Starting apache2.service - The Apache HTTP Server...
+Jan 17 14:47:18 ip-172-31-35-252 systemd[1]: Started apache2.service - The Apache HTTP Server.
+ubuntu@ip-172-31-35-252:~$ sudo
+usage: sudo -h | -K | -k | -V
+usage: sudo -v [-ABkNnS] [-g group] [-h host] [-p prompt] [-u user]
+usage: sudo -l [-ABkNnS] [-g group] [-h host] [-p prompt] [-U user]
+            [-u user] [command [arg ...]]
+usage: sudo [-ABbEHkNnPS] [-r role] [-t type] [-C num] [-D directory]
+            [-g group] [-h host] [-p prompt] [-R directory] [-T timeout]
+            [-u user] [VAR=value] [-i | -s] [command [arg ...]]
+usage: sudo -e [-ABkNnS] [-r role] [-t type] [-C num] [-D directory]
+            [-g group] [-h host] [-p prompt] [-R directory] [-T timeout]
+            [-u user] file ...
+ubuntu@ip-172-31-35-252:~$ command 'nslookup'
+> sudo apt update
+;; Got SERVFAIL reply from 127.0.0.53
+Server:         127.0.0.53
+Address:        127.0.0.53#53
+
+** server can't find sudo: SERVFAIL
+> q
+;; Got SERVFAIL reply from 127.0.0.53
+Server:         127.0.0.53
+Address:        127.0.0.53#53
+
+** server can't find q: SERVFAIL
+> sudo apt update
+;; Got SERVFAIL reply from 127.0.0.53
+Server:         127.0.0.53
+Address:        127.0.0.53#53
+
+** server can't find sudo: SERVFAIL
+> exit
+
+ubuntu@ip-172-31-35-252:~$ sudo apt update
+Hit:1 http://ap-southeast-1.ec2.archive.ubuntu.com/ubuntu noble InRelease
+Hit:2 http://ap-southeast-1.ec2.archive.ubuntu.com/ubuntu noble-updates InRelease
+Hit:3 http://ap-southeast-1.ec2.archive.ubuntu.com/ubuntu noble-backports InRelease
+Get:4 http://security.ubuntu.com/ubuntu noble-security InRelease [126 kB]
+Get:5 http://security.ubuntu.com/ubuntu noble-security/main amd64 Components [21.6 kB]
+Get:6 http://security.ubuntu.com/ubuntu noble-security/universe amd64 Components [71.4 kB]
+Get:7 http://security.ubuntu.com/ubuntu noble-security/restricted amd64 Components [212 B]
+Get:8 http://security.ubuntu.com/ubuntu noble-security/multiverse amd64 Components [212 B]
+Fetched 220 kB in 2s (140 kB/s)    
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+86 packages can be upgraded. Run 'apt list --upgradable' to see them.
+ubuntu@ip-172-31-35-252:~$ sudo apt install -y dnsutils
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following additional packages will be installed:
+  bind9-dnsutils bind9-host bind9-libs
+The following NEW packages will be installed:
+  dnsutils
+The following packages will be upgraded:
+  bind9-dnsutils bind9-host bind9-libs
+3 upgraded, 1 newly installed, 0 to remove and 83 not upgraded.
+Need to get 1467 kB of archives.
+After this operation, 31.7 kB of additional disk space will be used.
+Get:1 http://ap-southeast-1.ec2.archive.ubuntu.com/ubuntu noble-updates/main amd64 bind9-dnsutils amd64 1:9.18.39-0ubuntu0.24.04.2 [156 kB]
+Get:2 http://ap-southeast-1.ec2.archive.ubuntu.com/ubuntu noble-updates/main amd64 bind9-host amd64 1:9.18.39-0ubuntu0.24.04.2 [50.5 kB]
+Get:3 http://ap-southeast-1.ec2.archive.ubuntu.com/ubuntu noble-updates/main amd64 bind9-libs amd64 1:9.18.39-0ubuntu0.24.04.2 [1257 kB]
+Get:4 http://ap-southeast-1.ec2.archive.ubuntu.com/ubuntu noble-updates/universe amd64 dnsutils all 1:9.18.39-0ubuntu0.24.04.2 [3684 B]
+Fetched 1467 kB in 0s (36.8 MB/s)
+(Reading database ... 72458 files and directories currently installed.)
+Preparing to unpack .../bind9-dnsutils_1%3a9.18.39-0ubuntu0.24.04.2_amd64.deb ...
+Unpacking bind9-dnsutils (1:9.18.39-0ubuntu0.24.04.2) over (1:9.18.39-0ubuntu0.24.04.1) ...
+Preparing to unpack .../bind9-host_1%3a9.18.39-0ubuntu0.24.04.2_amd64.deb ...
+Unpacking bind9-host (1:9.18.39-0ubuntu0.24.04.2) over (1:9.18.39-0ubuntu0.24.04.1) ...
+Preparing to unpack .../bind9-libs_1%3a9.18.39-0ubuntu0.24.04.2_amd64.deb ...
+Unpacking bind9-libs:amd64 (1:9.18.39-0ubuntu0.24.04.2) over (1:9.18.39-0ubuntu0.24.04.1) ...
+Selecting previously unselected package dnsutils.
+Preparing to unpack .../dnsutils_1%3a9.18.39-0ubuntu0.24.04.2_all.deb ...
+Unpacking dnsutils (1:9.18.39-0ubuntu0.24.04.2) ...
+Setting up bind9-libs:amd64 (1:9.18.39-0ubuntu0.24.04.2) ...
+Setting up bind9-host (1:9.18.39-0ubuntu0.24.04.2) ...
+Setting up bind9-dnsutils (1:9.18.39-0ubuntu0.24.04.2) ...
+Setting up dnsutils (1:9.18.39-0ubuntu0.24.04.2) ...
+Processing triggers for libc-bin (2.39-0ubuntu8.6) ...
+Processing triggers for man-db (2.12.0-4build2) ...
+Scanning processes...                                                                            
+Scanning linux images...                                                                         
+
+Running kernel seems to be up-to-date.
+
+No services need to be restarted.
+
+No containers need to be restarted.
+
+No user sessions are running outdated binaries.
+
+No VM guests are running outdated hypervisor (qemu) binaries on this host.
+ubuntu@ip-172-31-35-252:~$ nslookup eatssleepdance.shop
+Server:         127.0.0.53
+Address:        127.0.0.53#53
+
+** server can't find eatssleepdance.shop: NXDOMAIN
+
+ubuntu@ip-172-31-35-252:~$ nslookup eatsleepdance.shop
+Server:         127.0.0.53
+Address:        127.0.0.53#53
+
+** server can't find eatsleepdance.shop: NXDOMAIN
+
+ubuntu@ip-172-31-35-252:~$ nslookup eatsleepdance.shop
+Server:         127.0.0.53
+Address:        127.0.0.53#53
+
+** server can't find eatsleepdance.shop: NXDOMAIN
+
+ubuntu@ip-172-31-35-252:~$ nslookup eatsleepdance,shop
+;; Got SERVFAIL reply from 127.0.0.53
+Server:         127.0.0.53
+Address:        127.0.0.53#53
+
+** server can't find eatsleepdance,shop: SERVFAIL
+
+ubuntu@ip-172-31-35-252:~$ nslookup eatsleepdance.shop
+Server:         127.0.0.53
+Address:        127.0.0.53#53
+
+** server can't find eatsleepdance.shop: NXDOMAIN
+
+ubuntu@ip-172-31-35-252:~$ nslookup eatsleepdance.shop 8.8.8.8
+Server:         8.8.8.8
+Address:        8.8.8.8#53
+
+Non-authoritative answer:
+Name:   eatsleepdance.shop
+Address: 76.223.105.230
+Name:   eatsleepdance.shop
+Address: 13.248.243.5
+Name:   eatsleepdance.shop
+Address: 54.254.196.35
+
+ubuntu@ip-172-31-35-252:~$ sudo systemctl status apache2
+● apache2.service - The Apache HTTP Server
+     Loaded: loaded (/usr/lib/systemd/system/apache2.service; enabled; preset: enabled)
+     Active: active (running) since Sat 2026-01-17 14:47:18 UTC; 35min ago
+       Docs: https://httpd.apache.org/docs/2.4/
+   Main PID: 2420 (apache2)
+      Tasks: 55 (limit: 1008)
+     Memory: 5.9M (peak: 6.3M)
+        CPU: 148ms
+     CGroup: /system.slice/apache2.service
+             ├─2420 /usr/sbin/apache2 -k start
+             ├─2422 /usr/sbin/apache2 -k start
+             └─2423 /usr/sbin/apache2 -k start
+
+Jan 17 14:47:18 ip-172-31-35-252 systemd[1]: Starting apache2.service - The Apache HTTP Server...
+Jan 17 14:47:18 ip-172-31-35-252 systemd[1]: Started apache2.service - The Apache HTTP Server.
+ubuntu@ip-172-31-35-252:~$ sudo apt update
+Hit:1 http://ap-southeast-1.ec2.archive.ubuntu.com/ubuntu noble InRelease
+Hit:2 http://ap-southeast-1.ec2.archive.ubuntu.com/ubuntu noble-updates InRelease
+Hit:3 http://ap-southeast-1.ec2.archive.ubuntu.com/ubuntu noble-backports InRelease
+Hit:4 http://security.ubuntu.com/ubuntu noble-security InRelease
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+83 packages can be upgraded. Run 'apt list --upgradable' to see them.
+ubuntu@ip-172-31-35-252:~$ sudo apt install -y dnsutils
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+dnsutils is already the newest version (1:9.18.39-0ubuntu0.24.04.2).
+0 upgraded, 0 newly installed, 0 to remove and 83 not upgraded.
+ubuntu@ip-172-31-35-252:~$ nslookup eatsleepdance.shop 8.8.8.8
+Server:         8.8.8.8
+Address:        8.8.8.8#53
+
+Non-authoritative answer:
+Name:   eatsleepdance.shop
+Address: 76.223.105.230
+Name:   eatsleepdance.shop
+Address: 54.254.196.35
+Name:   eatsleepdance.shop
+Address: 13.248.243.5
+
+ubuntu@ip-172-31-35-252:~$ dig eatsleepdance.shop
+
+; <<>> DiG 9.18.39-0ubuntu0.24.04.2-Ubuntu <<>> eatsleepdance.shop
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 39966
+;; flags: qr rd ra; QUERY: 1, ANSWER: 3, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 65494
+;; QUESTION SECTION:
+;eatsleepdance.shop.            IN      A
+
+;; ANSWER SECTION:
+eatsleepdance.shop.     47      IN      A       76.223.105.230
+eatsleepdance.shop.     47      IN      A       13.248.243.5
+eatsleepdance.shop.     47      IN      A       54.254.196.35
+
+;; Query time: 4 msec
+;; SERVER: 127.0.0.53#53(127.0.0.53) (UDP)
+;; WHEN: Sat Jan 17 15:24:01 UTC 2026
+;; MSG SIZE  rcvd: 95
+
+ubuntu@ip-172-31-35-252:~$ sudo apt install -y certbot python3-certbot-apache
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following additional packages will be installed:
+  augeas-lenses libaugeas0 python3-acme python3-augeas python3-certbot python3-configargparse
+  python3-icu python3-josepy python3-parsedatetime python3-rfc3339
+Suggested packages:
+  augeas-doc python-certbot-doc python3-certbot-nginx augeas-tools python-acme-doc
+  python-certbot-apache-doc
+The following NEW packages will be installed:
+  augeas-lenses certbot libaugeas0 python3-acme python3-augeas python3-certbot
+  python3-certbot-apache python3-configargparse python3-icu python3-josepy
+  python3-parsedatetime python3-rfc3339
+0 upgraded, 12 newly installed, 0 to remove and 83 not upgraded.
+Need to get 1657 kB of archives.
+After this operation, 8599 kB of additional disk space will be used.
+Get:1 http://ap-southeast-1.ec2.archive.ubuntu.com/ubuntu noble/universe amd64 augeas-lenses all 1.14.1-1build2 [323 kB]
+Get:2 http://ap-southeast-1.ec2.archive.ubuntu.com/ubuntu noble/universe amd64 libaugeas0 amd64 1.14.1-1build2 [166 kB]
+Get:3 http://ap-southeast-1.ec2.archive.ubuntu.com/ubuntu noble/universe amd64 python3-josepy all 1.14.0-1 [22.1 kB]
+Get:4 http://ap-southeast-1.ec2.archive.ubuntu.com/ubuntu noble/universe amd64 python3-rfc3339 all 1.1-4 [6744 B]
+Get:5 http://ap-southeast-1.ec2.archive.ubuntu.com/ubuntu noble/universe amd64 python3-acme all 2.9.0-1 [48.5 kB]
+Get:6 http://ap-southeast-1.ec2.archive.ubuntu.com/ubuntu noble/universe amd64 python3-augeas all 0.5.0-1.1 [9124 B]
+Get:7 http://ap-southeast-1.ec2.archive.ubuntu.com/ubuntu noble/universe amd64 python3-configargparse all 1.7-1 [31.7 kB]
+Get:8 http://ap-southeast-1.ec2.archive.ubuntu.com/ubuntu noble/universe amd64 python3-parsedatetime all 2.6-3 [32.8 kB]
+Get:9 http://ap-southeast-1.ec2.archive.ubuntu.com/ubuntu noble/universe amd64 python3-certbot all 2.9.0-1 [267 kB]
+Get:10 http://ap-southeast-1.ec2.archive.ubuntu.com/ubuntu noble/universe amd64 certbot all 2.9.0-1 [89.2 kB]
+Get:11 http://ap-southeast-1.ec2.archive.ubuntu.com/ubuntu noble/universe amd64 python3-certbot-apache all 2.9.0-1 [128 kB]
+Get:12 http://ap-southeast-1.ec2.archive.ubuntu.com/ubuntu noble/main amd64 python3-icu amd64 2.12-1build2 [534 kB]
+Fetched 1657 kB in 16s (104 kB/s)                                                               
+Preconfiguring packages ...
+Selecting previously unselected package augeas-lenses.
+(Reading database ... 72462 files and directories currently installed.)
+Preparing to unpack .../00-augeas-lenses_1.14.1-1build2_all.deb ...
+Unpacking augeas-lenses (1.14.1-1build2) ...
+Selecting previously unselected package libaugeas0:amd64.
+Preparing to unpack .../01-libaugeas0_1.14.1-1build2_amd64.deb ...
+Unpacking libaugeas0:amd64 (1.14.1-1build2) ...
+Selecting previously unselected package python3-josepy.
+Preparing to unpack .../02-python3-josepy_1.14.0-1_all.deb ...
+Unpacking python3-josepy (1.14.0-1) ...
+Selecting previously unselected package python3-rfc3339.
+Preparing to unpack .../03-python3-rfc3339_1.1-4_all.deb ...
+Unpacking python3-rfc3339 (1.1-4) ...
+Selecting previously unselected package python3-acme.
+Preparing to unpack .../04-python3-acme_2.9.0-1_all.deb ...
+Unpacking python3-acme (2.9.0-1) ...
+Selecting previously unselected package python3-augeas.
+Preparing to unpack .../05-python3-augeas_0.5.0-1.1_all.deb ...
+Unpacking python3-augeas (0.5.0-1.1) ...
+Selecting previously unselected package python3-configargparse.
+Preparing to unpack .../06-python3-configargparse_1.7-1_all.deb ...
+Unpacking python3-configargparse (1.7-1) ...
+Selecting previously unselected package python3-parsedatetime.
+Preparing to unpack .../07-python3-parsedatetime_2.6-3_all.deb ...
+Unpacking python3-parsedatetime (2.6-3) ...
+Selecting previously unselected package python3-certbot.
+Preparing to unpack .../08-python3-certbot_2.9.0-1_all.deb ...
+Unpacking python3-certbot (2.9.0-1) ...
+Selecting previously unselected package certbot.
+Preparing to unpack .../09-certbot_2.9.0-1_all.deb ...
+Unpacking certbot (2.9.0-1) ...
+Selecting previously unselected package python3-certbot-apache.
+Preparing to unpack .../10-python3-certbot-apache_2.9.0-1_all.deb ...
+Unpacking python3-certbot-apache (2.9.0-1) ...
+Selecting previously unselected package python3-icu.
+Preparing to unpack .../11-python3-icu_2.12-1build2_amd64.deb ...
+Unpacking python3-icu (2.12-1build2) ...
+Setting up python3-configargparse (1.7-1) ...
+Setting up python3-parsedatetime (2.6-3) ...
+Setting up python3-icu (2.12-1build2) ...
+Setting up augeas-lenses (1.14.1-1build2) ...
+Setting up libaugeas0:amd64 (1.14.1-1build2) ...
+Setting up python3-josepy (1.14.0-1) ...
+Setting up python3-augeas (0.5.0-1.1) ...
+Setting up python3-rfc3339 (1.1-4) ...
+Setting up python3-acme (2.9.0-1) ...
+Setting up python3-certbot (2.9.0-1) ...
+Setting up certbot (2.9.0-1) ...
+Created symlink /etc/systemd/system/timers.target.wants/certbot.timer → /usr/lib/systemd/system/certbot.timer.
+Setting up python3-certbot-apache (2.9.0-1) ...
+Processing triggers for man-db (2.12.0-4build2) ...
+Processing triggers for libc-bin (2.39-0ubuntu8.6) ...
+Scanning processes...                                                                            
+Scanning linux images...                                                                         
+
+Running kernel seems to be up-to-date.
+
+No services need to be restarted.
+
+No containers need to be restarted.
+
+No user sessions are running outdated binaries.
+
+No VM guests are running outdated hypervisor (qemu) binaries on this host.
+ubuntu@ip-172-31-35-252:~$ sudo certbot --apache
+Saving debug log to /var/log/letsencrypt/letsencrypt.log
+Enter email address (used for urgent renewal and security notices)
+ (Enter 'c' to cancel): diana.seow.ds@gmail.com
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Please read the Terms of Service at
+https://letsencrypt.org/documents/LE-SA-v1.6-August-18-2025.pdf. You must agree
+in order to register with the ACME server. Do you agree?
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+(Y)es/(N)o: yes
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Would you be willing, once your first certificate is successfully issued, to
+share your email address with the Electronic Frontier Foundation, a founding
+partner of the Let's Encrypt project and the non-profit organization that
+develops Certbot? We'd like to send you email about our work encrypting the web,
+EFF news, campaigns, and ways to support digital freedom.
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+(Y)es/(N)o: (Y)
+(Y)es/(N)o: (Y)es
+(Y)es/(N)o: Y
+Account registered.
+Please enter the domain name(s) you would like on your certificate (comma and/or
+space separated) (Enter 'c' to cancel): eatsleepdance.shop
+Requesting a certificate for eatsleepdance.shop
+
+Certbot failed to authenticate some domains (authenticator: apache). The Certificate Authority reported these problems:
+  Domain: eatsleepdance.shop
+  Type:   unauthorized
+  Detail: 13.248.243.5: Invalid response from https://eatsleepdance.shop/.well-known/acme-challenge/wkKHfKqX1Um6ssPnNeGKY8nm8sTZj7acazvV2K78Kq4: 404
+
+Hint: The Certificate Authority failed to verify the temporary Apache configuration changes made by Certbot. Ensure that the listed domains point to this Apache server and that it is accessible from the internet.
+
+Some challenges have failed.
+Ask for help or search for solutions at https://community.letsencrypt.org. See the logfile /var/log/letsencrypt/letsencrypt.log or re-run Certbot with -v for more details.
+ubuntu@ip-172-31-35-252:~$ nslookup eatsleepdance.shop 8.8.8.8
+Server:         8.8.8.8
+Address:        8.8.8.8#53
+
+Non-authoritative answer:
+Name:   eatsleepdance.shop
+Address: 13.248.243.5
+Name:   eatsleepdance.shop
+Address: 54.254.196.35
+Name:   eatsleepdance.shop
+Address: 76.223.105.230
+
+ubuntu@ip-172-31-35-252:~$ sudo systemctl status apache2
+● apache2.service - The Apache HTTP Server
+     Loaded: loaded (/usr/lib/systemd/system/apache2.service; enabled; preset: enabled)
+     Active: active (running) since Sat 2026-01-17 14:47:18 UTC; 41min ago
+       Docs: https://httpd.apache.org/docs/2.4/
+   Main PID: 2420 (apache2)
+      Tasks: 55 (limit: 1008)
+     Memory: 5.6M (peak: 6.6M)
+        CPU: 204ms
+     CGroup: /system.slice/apache2.service
+             ├─2420 /usr/sbin/apache2 -k start
+             ├─4491 /usr/sbin/apache2 -k start
+             └─4492 /usr/sbin/apache2 -k start
+
+Jan 17 14:47:18 ip-172-31-35-252 systemd[1]: Starting apache2.service - The Apache HTTP Server...
+Jan 17 14:47:18 ip-172-31-35-252 systemd[1]: Started apache2.service - The Apache HTTP Server.
+ubuntu@ip-172-31-35-252:~$ sudo certbot --apache
+Saving debug log to /var/log/letsencrypt/letsencrypt.log
+Please enter the domain name(s) you would like on your certificate (comma and/or
+space separated) (Enter 'c' to cancel): eatsleepdance.shop
+Requesting a certificate for eatsleepdance.shop
+
+Certbot failed to authenticate some domains (authenticator: apache). The Certificate Authority reported these problems:
+  Domain: eatsleepdance.shop
+  Type:   unauthorized
+  Detail: During secondary validation: 76.223.105.230: Invalid response from https://eatsleepdance.shop/.well-known/acme-challenge/VPHnXsR-s8JxPMl1nbrtj7fKuqDmbdvIpQLN33nXZ58: 404
+
+Hint: The Certificate Authority failed to verify the temporary Apache configuration changes made by Certbot. Ensure that the listed domains point to this Apache server and that it is accessible from the internet.
+
+Some challenges have failed.
+Ask for help or search for solutions at https://community.letsencrypt.org. See the logfile /var/log/letsencrypt/letsencrypt.log or re-run Certbot with -v for more details.
