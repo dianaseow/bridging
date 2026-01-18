@@ -1,0 +1,182 @@
+Welcome to Ubuntu 24.04.3 LTS (GNU/Linux 6.6.87.2-microsoft-standard-WSL2 x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+ System information as of Sun Jan 18 10:23:29 +08 2026
+
+  System load:  0.0                 Processes:             45
+  Usage of /:   0.2% of 1006.85GB   Users logged in:       1
+  Memory usage: 6%                  IPv4 address for eth0: 172.21.3.107
+  Swap usage:   0%
+
+
+This message is shown once a day. To disable it please create the
+/home/diana/.hushlogin file.
+diana@BATCOM:~$ cd /home/ubuntu
+-bash: cd: /home/ubuntu: No such file or directory
+diana@BATCOM:~$ mkdir -p Documents
+diana@BATCOM:~$ cd Documents
+mkdir folder1 folder2
+touch file1.txt file2.txt
+diana@BATCOM:~/Documents$ cd /home/ubuntu
+mkdir -p backup
+-bash: cd: /home/ubuntu: No such file or directory
+diana@BATCOM:~/Documents$ nano backup.sh
+diana@BATCOM:~/Documents$ chmod 777 backup.sh
+diana@BATCOM:~/Documents$ ls -l backup.sh
+-rwxrwxrwx 1 diana diana 205 Jan 18 10:25 backup.sh
+diana@BATCOM:~/Documents$ ./backup.sh
+cp: cannot stat '/home/ubuntu/Documents/*': No such file or directory
+./backup.sh: line 7: zip: command not found
+cp: cannot stat '/home/ubuntu/backup_18_01_26.zip': No such file or directory
+diana@BATCOM:~/Documents$ ls /home/ubuntu
+ls: cannot access '/home/ubuntu': No such file or directory
+diana@BATCOM:~/Documents$ cd ~
+sudo apt update
+sudo apt install -y zip
+mkdir -p ~/Documents ~/backup
+[sudo] password for diana:
+Get:1 http://security.ubuntu.com/ubuntu noble-security InRelease [126 kB]
+Hit:2 http://archive.ubuntu.com/ubuntu noble InRelease
+Get:3 http://archive.ubuntu.com/ubuntu noble-updates InRelease [126 kB]
+Get:4 http://security.ubuntu.com/ubuntu noble-security/main amd64 Packages [1404 kB]
+Get:5 http://security.ubuntu.com/ubuntu noble-security/main Translation-en [228 kB]
+Get:6 http://security.ubuntu.com/ubuntu noble-security/main amd64 Components [21.5 kB]
+Get:7 http://security.ubuntu.com/ubuntu noble-security/main amd64 c-n-f Metadata [9724 B]
+Get:8 http://security.ubuntu.com/ubuntu noble-security/universe amd64 Packages [922 kB]
+Get:9 http://archive.ubuntu.com/ubuntu noble-backports InRelease [126 kB]
+Get:10 http://security.ubuntu.com/ubuntu noble-security/universe Translation-en [209 kB]
+Get:11 http://security.ubuntu.com/ubuntu noble-security/universe amd64 Components [71.4 kB]
+Get:12 http://security.ubuntu.com/ubuntu noble-security/universe amd64 c-n-f Metadata [19.7 kB]
+Get:13 http://security.ubuntu.com/ubuntu noble-security/restricted amd64 Packages [2302 kB]
+Get:14 http://security.ubuntu.com/ubuntu noble-security/restricted Translation-en [527 kB]
+Get:15 http://security.ubuntu.com/ubuntu noble-security/restricted amd64 Components [212 B]
+Get:16 http://security.ubuntu.com/ubuntu noble-security/multiverse amd64 Components [212 B]
+Get:17 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 Packages [1694 kB]
+Get:18 http://archive.ubuntu.com/ubuntu noble-updates/main Translation-en [313 kB]
+Get:19 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 Components [175 kB]
+Get:20 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 c-n-f Metadata [15.9 kB]
+Get:21 http://archive.ubuntu.com/ubuntu noble-updates/universe amd64 Packages [1514 kB]
+Get:22 http://archive.ubuntu.com/ubuntu noble-updates/universe Translation-en [308 kB]
+Get:23 http://archive.ubuntu.com/ubuntu noble-updates/universe amd64 Components [377 kB]
+Get:24 http://archive.ubuntu.com/ubuntu noble-updates/universe amd64 c-n-f Metadata [31.5 kB]
+Get:25 http://archive.ubuntu.com/ubuntu noble-updates/restricted amd64 Packages [2426 kB]
+Get:26 http://archive.ubuntu.com/ubuntu noble-updates/restricted Translation-en [554 kB]
+Get:27 http://archive.ubuntu.com/ubuntu noble-updates/restricted amd64 Components [212 B]
+Get:28 http://archive.ubuntu.com/ubuntu noble-updates/multiverse amd64 Components [940 B]
+Get:29 http://archive.ubuntu.com/ubuntu noble-backports/main amd64 Components [7312 B]
+Get:30 http://archive.ubuntu.com/ubuntu noble-backports/universe amd64 Components [10.5 kB]
+Get:31 http://archive.ubuntu.com/ubuntu noble-backports/restricted amd64 Components [216 B]
+Get:32 http://archive.ubuntu.com/ubuntu noble-backports/multiverse amd64 Components [212 B]
+Fetched 13.5 MB in 7s (1852 kB/s)
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+8 packages can be upgraded. Run 'apt list --upgradable' to see them.
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following package was automatically installed and is no longer required:
+  libllvm19
+Use 'sudo apt autoremove' to remove it.
+The following additional packages will be installed:
+  unzip
+The following NEW packages will be installed:
+  unzip zip
+0 upgraded, 2 newly installed, 0 to remove and 8 not upgraded.
+Need to get 350 kB of archives.
+After this operation, 933 kB of additional disk space will be used.
+Get:1 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 unzip amd64 6.0-28ubuntu4.1 [174 kB]
+Get:2 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 zip amd64 3.0-13ubuntu0.2 [176 kB]
+Fetched 350 kB in 5s (69.0 kB/s)
+Selecting previously unselected package unzip.
+(Reading database ... 44470 files and directories currently installed.)
+Preparing to unpack .../unzip_6.0-28ubuntu4.1_amd64.deb ...
+Unpacking unzip (6.0-28ubuntu4.1) ...
+Selecting previously unselected package zip.
+Preparing to unpack .../zip_3.0-13ubuntu0.2_amd64.deb ...
+Unpacking zip (3.0-13ubuntu0.2) ...
+Setting up unzip (6.0-28ubuntu4.1) ...
+Setting up zip (3.0-13ubuntu0.2) ...
+Processing triggers for man-db (2.12.0-4build2) ...
+diana@BATCOM:~$ whoami
+pwd
+diana
+/home/diana
+diana@BATCOM:~$ cd ~/Documents
+mkdir -p folder1 folder2
+touch file1.txt file2.txt
+ls -R
+.:
+backup  backup.sh  file1.txt  file2.txt  folder1  folder2
+
+./backup:
+
+./folder1:
+
+./folder2:
+diana@BATCOM:~/Documents$ nano ~/Documents/backup.sh
+diana@BATCOM:~/Documents$ chmod +x ~/Documents/backup.sh
+diana@BATCOM:~/Documents$ ~/Documents/backup.sh
+  adding: home/diana/backup/backup/ (stored 0%)
+  adding: home/diana/backup/backup.sh (deflated 63%)
+  adding: home/diana/backup/file1.txt (stored 0%)
+  adding: home/diana/backup/file2.txt (stored 0%)
+  adding: home/diana/backup/folder1/ (stored 0%)
+  adding: home/diana/backup/folder2/ (stored 0%)
+cp: '/home/diana/backup_18_01_26.zip' and '/home/diana/backup_18_01_26.zip' are the same file
+diana@BATCOM:~/Documents$ ls -l ~/backup
+ls -l ~/backup_*.zip
+ls -l ~/backup_*.zip 2>/dev/null || ls -l ~/backup_*.zip
+ls -l ~/backup_*.zip
+ls -l ~/backup_*.zip
+total 16
+drwxr-xr-x 2 diana diana 4096 Jan 18 10:31 backup
+-rwxr-xr-x 1 diana diana  429 Jan 18 10:31 backup.sh
+-rw-r--r-- 1 diana diana    0 Jan 18 10:31 file1.txt
+-rw-r--r-- 1 diana diana    0 Jan 18 10:31 file2.txt
+drwxr-xr-x 2 diana diana 4096 Jan 18 10:31 folder1
+drwxr-xr-x 2 diana diana 4096 Jan 18 10:31 folder2
+-rw-r--r-- 1 diana diana 1265 Jan 18 10:31 /home/diana/backup_18_01_26.zip
+-rw-r--r-- 1 diana diana 1265 Jan 18 10:31 /home/diana/backup_18_01_26.zip
+-rw-r--r-- 1 diana diana 1265 Jan 18 10:31 /home/diana/backup_18_01_26.zip
+-rw-r--r-- 1 diana diana 1265 Jan 18 10:31 /home/diana/backup_18_01_26.zip
+diana@BATCOM:~/Documents$ ls -l ~/backup
+ls -l ~/backup_*.zip
+ls -l ~/backup_*.zip
+total 16
+drwxr-xr-x 2 diana diana 4096 Jan 18 10:31 backup
+-rwxr-xr-x 1 diana diana  429 Jan 18 10:31 backup.sh
+-rw-r--r-- 1 diana diana    0 Jan 18 10:31 file1.txt
+-rw-r--r-- 1 diana diana    0 Jan 18 10:31 file2.txt
+drwxr-xr-x 2 diana diana 4096 Jan 18 10:31 folder1
+drwxr-xr-x 2 diana diana 4096 Jan 18 10:31 folder2
+-rw-r--r-- 1 diana diana 1265 Jan 18 10:31 /home/diana/backup_18_01_26.zip
+-rw-r--r-- 1 diana diana 1265 Jan 18 10:31 /home/diana/backup_18_01_26.zip
+diana@BATCOM:~/Documents$ unzip -l ~/backup_*.zip | head
+Archive:  /home/diana/backup_18_01_26.zip
+  Length      Date    Time    Name
+---------  ---------- -----   ----
+        0  2026-01-18 10:31   home/diana/backup/backup/
+      429  2026-01-18 10:31   home/diana/backup/backup.sh
+        0  2026-01-18 10:31   home/diana/backup/file1.txt
+        0  2026-01-18 10:31   home/diana/backup/file2.txt
+        0  2026-01-18 10:31   home/diana/backup/folder1/
+        0  2026-01-18 10:31   home/diana/backup/folder2/
+---------                     -------
+diana@BATCOM:~/Documents$ crontab -e
+no crontab for diana - using an empty one
+
+Select an editor.  To change later, run 'select-editor'.
+  1. /bin/nano        <---- easiest
+  2. /usr/bin/vim.basic
+  3. /usr/bin/vim.tiny
+  4. /bin/ed
+
+Choose 1-4 [1]: 0 * * * * /bin/bash /home/diana/Documents/backup.sh >> /var/log/backup.log 2>&1
+Choose 1-4 [1]: crontab -l
+Choose 1-4 [1]: 1
+No modification made
+diana@BATCOM:~/Documents$
